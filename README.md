@@ -1,6 +1,15 @@
-# Life
+# Life-C: A High-Performance Simulation Engine
 
-Over engineered implementation of Conway's Game of Life.
+A zero-dependency, cross-platform implementation of Conway's Game of Life 
+optimized for asynchronous execution and terminal-based rendering.
+
+### Engineering Highlights:
+* **Multithreaded Input**: Utilizes pthreads for asynchronous simulation control, 
+  decoupling user interaction from the physics loop.
+* **Optimized Neighbor Tracking**: Implements an incremental neighbor-counting 
+  algorithm to minimize redundant lookups in sparse grids.
+* **Low-Latency Rendering**: Features a double-buffered terminal update system 
+  to minimize I/O syscalls and prevent screen flickering.
 
 ![example](example.gif)
 
